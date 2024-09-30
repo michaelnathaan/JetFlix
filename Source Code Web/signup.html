@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JETFLIX</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img class="logo-image" src="./assets/img/logo.png" alt="logo">
+            </div>
+            <ul id="nav-list" class="nav-menu">
+                <li class="menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="news.html">News & Popular</a>
+                </li>
+                <li class="menu-item">
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li class="menu-item">
+                    <a href="signup.html" class="active">Sign Up</a>
+                </li>
+            </ul>
+            <div id="nav-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <div class="bg-image">
+            <form name="myForm" href="index.html" method="GET" class="signup-form-box" onsubmit="return validateForm()">
+                <div class="box-form">
+                    <div class="bg-dark">
+                        <h2>Sign Up</h2>
+                        <div class="subtitle-signup">Name</div>
+                        <div class="input-section">
+                            <input type="text" name="fname">
+                        </div>
+                        <div class="subtitle-signup">Password</div>
+                        <div class="input-section">
+                            <input type="password" name="psswd">
+                        </div>
+                        <div class="subtitle-signup">Confirm Password</div>
+                        <div class="input-section">
+                            <input type="password" name="psswd-conf">
+                        </div>
+                        <div class="subtitle-signup">Date of Birth</div>
+                        <div class="input-section">
+                            <input type="date" name="birth">
+                        </div>
+                        <div class="subtitle-signup">Gender</div>
+                        <div class="input-section">
+                            <select class="input-select" name="jenis-kelamin">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <br/>
+                        <input type="checkbox" id="terms" name="terms" value="Agree">
+                        <span>I agree to the terms & conditions</span>
+                        <div class="input-section">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div>
+                <p href="#">FAQ</p>
+                <p href="#">Cookie Preferences</p>
+            </div>
+            <div>
+                <p href="#">Help Center</p>
+                <p href="#">Corporate Information</p>
+            </div>
+            <div>
+                <p href="#">Terms of Use</p>
+            </div>
+            <div>
+                <p href="#">Privacy</p>
+            </div>
+        </div>
+        <!-- import javascript -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

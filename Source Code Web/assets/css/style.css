@@ -1,0 +1,447 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(19, 19, 19);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font: 15px sans-serif;
+}
+
+a:hover {
+    color: red;
+}
+
+.navbar {
+    /* make it stick */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* in front of all other elements */
+    z-index: 99;
+    /* set background */
+    background-color: black;
+    padding: 10px 5%;
+
+    /* define flex */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo-image {
+    display: block;
+    height: 48px
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px auto;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.active {
+    color: red;
+    font-weight: bold;
+}
+
+/* home page section */
+.bg-image {
+    margin-top: 1px;
+    background-image: url("../img/bg1.png");
+    background-color: #cccccc;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-form {
+    text-align: center;
+    padding-top: 180px;
+    color: white;
+}
+
+.title-home {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.subtitle-home {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-form > div > input {
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.signup-form > div > button {
+    font-size: 30px;
+    background-color: red;
+    border-radius: 20px;
+    padding: 13px 25px 13px 25px;
+    color: white;
+    border: 1px solid white;
+    margin-left: 30px;
+}
+
+.signup-form > div > button:hover {
+    cursor: pointer;
+    background-color: rgb(126, 0, 0);
+}
+
+.input-section {
+    vertical-align: middle;
+}
+
+
+.kid-movie {
+    display: flex;
+    flex-direction: row;
+}
+
+.kid-movie > div > img {
+    max-width: 70%;
+    padding: 50px;
+}
+
+.text-kid {
+    padding-top: 150px;
+    color: white;
+}
+
+.text-kid > h1 {
+    margin-bottom: 50px;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 200px;
+    justify-content: space-between;
+    padding: 100px 100px 0px 100px;
+    font-size: 20px;
+}
+
+.signup-form-box {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.signup-form-box > div > div > div > input {
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    width: 300px;
+}
+
+.signup-form-box > div > div > div > button {
+    font-size: 15px;
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    margin-top: 40px;
+    width: 320px;
+}
+
+.signup-form-box > div > div > div > button:hover {
+    cursor: pointer;
+    background-color: rgb(126, 0, 0);
+}
+
+.box-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bg-dark {
+    background-color: black;
+    padding: 20px;
+}
+
+.subtitle-signup {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.input-select {
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid white;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    width: 320px;
+}
+
+.news-title {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content:center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.news-item-img > img {
+    max-height: 300px;
+}
+
+.news-item-text {
+    width: 500px;
+}
+
+.news-item-text > button {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.news-item-text > button:hover {
+    background-color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+
+
+
+.movie-category {
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.movies-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 40px;
+    margin-top: 5px;
+    justify-content: space-between;
+    color: white;
+}
+
+.movies-img > img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movies-img > img:hover {
+    height: 350px;
+    width: 100%;
+    transition: 1s;
+}
+
+.movies-img {
+    width: 100%;
+}
+
+.container {
+    background-image: url("../img/bg-jumbotron.png");
+    background-color: #cccccc;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.jt-title {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.synopsis {
+    color: white;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.jumbotron {
+    margin-bottom: 30px;
+}
+
+.detail-container {
+    background-image: url("../img/bg-jumbotron.png");
+    background-color: #cccccc;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-jumbotron {
+    margin-bottom: 30px;
+}
+
+.detail-episodes {
+    background-color: rgba(0, 0, 0, 0.606);
+    padding: 20px 50px;
+    color:white;
+    overflow: scroll;
+    height: 70vh;
+    width: 100%;
+    scrollbar-color: red #ffffff;
+}
+
+.detail-episodes > h1 {
+    text-align: center;
+}
+
+.detail-movies-img > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detail-movies-img {
+    margin-bottom: 50px;
+}
+
+.detail-btn {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 3px solid white;
+}
+
+.detail-btn:hover {
+    background-color: rgba(141, 141, 141, 0.633);
+    cursor: pointer;
+    color: white;
+}
+
+.label-red {
+    font-weight: bold;
+    color: rgb(255, 28, 28);
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .nav-menu {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 20px 0;
+        text-align: left;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    .sml-screen {
+        display: block;
+    }
+
+    .signup-form > div > button {
+        margin-top: 20px;
+    }
+    .box-form {
+        margin: 0px 0%;
+    }
+    .movies-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list-movie {
+        padding: 50px;
+    }
+    .synopsis {
+        width: 100%;
+    }
+    .movie-category {
+        margin-left: 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .detail-episodes {
+        padding: 20px 50px;
+        height:fit-content;
+        width:auto;
+    }
+    .detail-movies-img > img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
